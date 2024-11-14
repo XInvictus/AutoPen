@@ -1,0 +1,3 @@
+robots.txt
+index.html
+/wp-json/wp/v2/users

@@ -60,6 +60,46 @@ Attacking http://test.rebex.net with ftp
     ]
 }
 ```
+### SSH
+Mode for testing SSH servers
+```
+(env) jwe0@ubuntu:~/Desktop/Side/AutomaticPenetration$ python3 main.py --target 192.168.1.92 --attack ssh
+Attacking http://192.168.1.92 with ssh
+[!] Banner: SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3
+[!] Found 19 algorithms
+{
+    "banner": {
+        "banner": "SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3",
+        "cve": []
+    },
+    "algo": {
+        "hex": [
+            "curve25519-sha256@libssh.org",
+            "ecdh-sha2-nistp256",
+            "ecdh-sha2-nistp384",
+            "ecdh-sha2-nistp521",
+            "diffie-hellman-group16-sha512",
+            "diffie-hellman-group-exchange-sha256",
+            "diffie-hellman-group14-sha256",
+            "diffie-hellman-group-exchange-sha1",
+            "diffie-hellman-group14-sha1",
+            "diffie-hellman-group1-sha1"
+        ],
+        "ciphers": [
+            "aes128-ctr",
+            "aes192-ctr",
+            "aes256-ctr",
+            "aes128-cbc",
+            "aes192-cbc",
+            "aes256-cbc",
+            "3des-cbc",
+            "aes128-gcm@openssh.com",
+            "aes256-gcm@openssh.com"
+        ]
+    }
+}
+```
+
 ## Legal
 This software was designed for usage in proper penetration testing. Under NO CIRCUMSTANCES must you use this software against non permitting targets, this is a cybercrime and can result in serious legal repurcussion.
 

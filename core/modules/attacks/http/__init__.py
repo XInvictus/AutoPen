@@ -1,9 +1,9 @@
 from core.modules.attacks.http import domains, logins, inclusion, paths
 from core.modules.attacks.http.wp import check
 
-def http(target):
+def http(data):
     result = {}
-    target = target[:-1] if target[-1] == "/" else target
+    target = data["target"][:-1] if target[-1] == "/" else target
     if check.verify(target):
         result["wp"] = True
     else:
